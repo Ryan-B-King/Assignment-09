@@ -4,6 +4,23 @@
     <meta charset="UTF-8">
     <title>Assignment 9 - The Bank Account Application</title>
     <script src="js/script.js"></script>
+
+    <style>
+        table {
+            margin: 10px 250px;
+        }
+        th {
+            width: 150px;
+            height: 40px;
+            border-style: solid;
+            margin: 0;
+            padding: 0;
+        }
+        td {
+            text-align: center;
+            font-size: 2em;
+        }
+    </style>
 </head>
 <body>
     <main>
@@ -11,6 +28,19 @@
         <button id="name">Name</button>
         <button id="deposit">Deposit</button>
         <button id="withdrawal">Withdrawal</button>
+
+        <div>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Balance</th>
+                </tr>
+                <tr>
+                    <td id="acctName"></td>
+                    <td id="acctBal"></td>
+                </tr>
+            </table>
+        </div>
     </main>
 </body>
 </html>
