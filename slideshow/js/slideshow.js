@@ -89,4 +89,12 @@ window.addEventListener("load", function () {
     slideshow.loadImages(slides).startSlideShow($("image"), $("caption"));
     // PAUSE THE SLIDESHOW
     $("play_pause").onclick = slideshow.createToggleHandler();
+
+    // SET SPEED OF SLIDESHOW
+    window.addEventListener('click', function(e) {
+        e.preventDefault();
+        let speed = 2000;
+        speed = window.prompt('Current speed is: ' + speed + '\nSet slideshow speed:');
+    });
 });
+
